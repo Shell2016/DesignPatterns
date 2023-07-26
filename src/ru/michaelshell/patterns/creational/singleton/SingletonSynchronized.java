@@ -1,7 +1,7 @@
 package ru.michaelshell.patterns.creational.singleton;
 
 public class SingletonSynchronized {
-    private volatile static SingletonSynchronized singleton;
+    private static volatile SingletonSynchronized singleton;
 
     private SingletonSynchronized() {
     }

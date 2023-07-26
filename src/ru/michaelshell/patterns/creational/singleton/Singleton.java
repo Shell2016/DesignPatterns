@@ -1,7 +1,7 @@
 package ru.michaelshell.patterns.creational.singleton;
 
 public class Singleton {
-    private static Singleton singleton = new Singleton();
+    private static final Singleton singleton = new Singleton();
 
     private Singleton() {
     }
