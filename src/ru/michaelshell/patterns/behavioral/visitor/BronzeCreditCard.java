@@ -11,7 +11,7 @@ public class BronzeCreditCard implements CreditCard {
     }
 
     @Override
-    public void accept(CashbackVisitor cashbackVisitor) {
-        cashbackVisitor.getCashbackForBronze(this);
+    public void accept(Visitor visitor) {
+        visitor.processBronzeCard(this);
     }
 }

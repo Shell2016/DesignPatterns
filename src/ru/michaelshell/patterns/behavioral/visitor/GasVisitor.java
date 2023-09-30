@@ -3,19 +3,19 @@ package ru.michaelshell.patterns.behavioral.visitor;
 /**
  * @author Mikhail Sheludyakov
  */
-public class GasCashbackVisitor implements CashbackVisitor {
+public class GasVisitor implements Visitor {
     @Override
-    public void getCashbackForBronze(CreditCard creditCard) {
+    public void processBronzeCard(CreditCard creditCard) {
         System.out.println("Gas cashback is 1%");
     }
 
     @Override
-    public void getCashbackForSilver(CreditCard creditCard) {
+    public void processSilverCard(CreditCard creditCard) {
         System.out.println("Gas cashback is 3%");
     }
 
     @Override
-    public void getCashbackForGold(CreditCard creditCard) {
+    public void processGoldCard(CreditCard creditCard) {
         System.out.println("Gas cashback is 5%");
     }
 }

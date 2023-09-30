@@ -11,7 +11,7 @@ public class SilverCreditCard implements CreditCard {
     }
 
     @Override
-    public void accept(CashbackVisitor cashbackVisitor) {
-        cashbackVisitor.getCashbackForSilver(this);
+    public void accept(Visitor visitor) {
+        visitor.processSilverCard(this);
     }
 }

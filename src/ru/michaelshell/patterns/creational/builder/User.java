@@ -1,7 +1,5 @@
 package ru.michaelshell.patterns.creational.builder;
 
-
-
 public class User {
 
     Long id;

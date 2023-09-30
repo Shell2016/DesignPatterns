@@ -11,7 +11,7 @@ public class GoldCreditCard implements CreditCard {
     }
 
     @Override
-    public void accept(CashbackVisitor cashbackVisitor) {
-        cashbackVisitor.getCashbackForGold(this);
+    public void accept(Visitor visitor) {
+        visitor.processGoldCard(this);
     }
 }

@@ -13,7 +13,9 @@ public class VisitorRunner {
         creditCards.add(new SilverCreditCard());
         creditCards.add(new GoldCreditCard());
 
-        creditCards.forEach(creditCard -> creditCard.accept(new FoodCashbackVisitor()));
-        creditCards.forEach(creditCard -> creditCard.accept(new GasCashbackVisitor()));
+        creditCards.forEach(creditCard -> creditCard.accept(new FoodVisitor()));
+        creditCards.forEach(creditCard -> creditCard.accept(new GasVisitor()));
+        System.out.println("**************************");
+        creditCards.forEach(creditCard -> creditCard.accept(new PriorityPassVisitor()));
     }
 }
