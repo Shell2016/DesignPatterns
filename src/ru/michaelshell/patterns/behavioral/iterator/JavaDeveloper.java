@@ -19,7 +19,6 @@ public class JavaDeveloper implements Collection<String> {
     }
 
     private class JavaDeveloperIterator implements Iterator<String> {
-
         int position = 0;
 
         @Override
