@@ -1,7 +1,7 @@
 package ru.michaelshell.patterns.behavioral.templatemethod;
 
 public abstract class BaseGameLoader {
-    public void load() {
+    public final void load() {
         createObjects();
         loadObjects();
         cleanTempFiles();
