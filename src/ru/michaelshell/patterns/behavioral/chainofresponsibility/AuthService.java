@@ -6,19 +6,15 @@ package ru.michaelshell.patterns.behavioral.chainofresponsibility;
  */
 public class AuthService {
 
-    private Handler handler;
+    private Filter filter;
 
-    public AuthService(Handler handler) {
-        this.handler = handler;
+    public AuthService(Filter filter) {
+        this.filter = filter;
     }
 
-    public boolean logIn(String username, String password) {
-        if (handler.handle(username, password)) {
-            System.out.println("Authentication successful");
-            return true;
-        }
-        System.out.println("Auth error!");
-        return false;
+    public void logIn(String username, String password) {
+        filter.doFilter(username, password);
+        System.out.println("Successful authentication!");
     }
 
 }
