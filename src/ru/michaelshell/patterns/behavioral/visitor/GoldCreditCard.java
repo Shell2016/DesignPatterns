@@ -12,6 +12,6 @@ public class GoldCreditCard implements CreditCard {
 
     @Override
     public void accept(Visitor visitor) {
-        visitor.processGoldCard(this);
+        visitor.processCard(this);
     }
 }

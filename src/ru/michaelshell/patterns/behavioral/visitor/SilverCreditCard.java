@@ -12,6 +12,6 @@ public class SilverCreditCard implements CreditCard {
 
     @Override
     public void accept(Visitor visitor) {
-        visitor.processSilverCard(this);
+        visitor.processCard(this);
     }
 }

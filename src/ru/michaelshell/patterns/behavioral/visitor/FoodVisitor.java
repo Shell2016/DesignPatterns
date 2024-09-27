@@ -5,17 +5,17 @@ package ru.michaelshell.patterns.behavioral.visitor;
  */
 public class FoodVisitor implements Visitor {
     @Override
-    public void processBronzeCard(CreditCard creditCard) {
+    public void processCard(BronzeCreditCard creditCard) {
         System.out.println("Food cashback is 0%");
     }
 
     @Override
-    public void processSilverCard(CreditCard creditCard) {
+    public void processCard(SilverCreditCard creditCard) {
         System.out.println("Food cashback is 1%");
     }
 
     @Override
-    public void processGoldCard(CreditCard creditCard) {
+    public void processCard(GoldCreditCard creditCard) {
         System.out.println("Food cashback is 2%");
     }
 }
